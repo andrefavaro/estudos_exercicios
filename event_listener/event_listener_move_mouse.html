@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Exercício de Event Listener ao mover o mouse sobre um elemento"
+    />
+    <title>
+      Exercício de Event Listener ao mover o mouse sobre um elemento
+    </title>
+  </head>
+  <body>
+    <div
+      onmouseover="mouseOver(this)"
+      onmouseout="mouseOut(this)"
+      style="
+        background-color: #42dd42;
+        width: 150px;
+        height: 25px;
+        padding: 40px;
+        text-align: center;
+      "
+    >
+      Passe o mouse aqui
+    </div>
+    <script type="text/javascript">
+      function mouseOver(call) {
+        call.innerHTML = "Obrigado!!!";
+      }
+      function mouseOut(call) {
+        call.innerHTML = "Passe o mouse aqui";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Exercício de Event Listener ao ativar o mouse sobre um elemento"
+    />
+    <title>
+      Exercício de Event Listener ao ativar o mouse sobre um elemento
+    </title>
+  </head>
+  <body>
+    <div
+      onmousedown="mouseDown(this)"
+      onmouseup="mouseUp(this)"
+      style="
+        background-color: #42b9dd;
+        width: 150px;
+        height: 25px;
+        padding: 40px;
+        text-align: center;
+      "
+    >
+      Clique aqui!!!
+    </div>
+    <script type="text/javascript">
+      function mouseDown(call) {
+        call.innerHTML = "Solte o clique";
+        call.style.backgroundColor = "#D94A38";
+      }
+      function mouseUp(call) {
+        call.innerHTML = "Obrigado!!!";
+        call.style.backgroundColor = "#42b9dd";
+      }
+    </script>
+  </body>
+</html>
